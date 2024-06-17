@@ -4,6 +4,8 @@ library(RPostgres)
 source("db_connect.R")
 source("auth.R")
 
+future::plan("multicore", workers = 8)
+
 #* @apiTitle Example API
 #* @apiDescription This is an example API with authentication using PostgreSQL.
 
