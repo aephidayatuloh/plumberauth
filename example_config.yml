@@ -1,0 +1,13 @@
+default:
+  dbname: "dbname"
+  host: "localhost"
+  port: 5432
+  user: "postgres"
+  password: "xxxxxxx"
+  
+production:
+  dbname: "prod-dbname"
+  host: "prod-server-host"
+  port: 5432
+  user: "prod-username"
+  password: "prod-passwdord-xxxxxxx"
