@@ -34,10 +34,10 @@ COPY renv.lock renv.lock
 RUN Rscript -e "install.packages('renv')"
 RUN Rscript -e "renv::restore()"
 
-COPY /api/api.R plumber.R
-COPY /api/auth.R auth.R
-COPY /api/db_connect.R db_connect.R
-COPY /api/config.yml config.yml
+COPY api.R plumber.R
+COPY auth.R auth.R
+COPY db_connect.R db_connect.R
+COPY config.yml config.yml
 
 # Expose the port that your API will run on
 #EXPOSE 7860
