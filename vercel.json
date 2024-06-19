@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/Dockerfile",
+      "src": "Dockerfile",
       "use": "@vercel/docker"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/$1"
+      "dest": "/"
     }
   ]
 }
