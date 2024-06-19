@@ -50,3 +50,4 @@ rsconnect/
 
 # Database connection
 config.yml
+.vercel
