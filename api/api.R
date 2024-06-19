@@ -9,6 +9,11 @@ source("auth.R")
 #* @apiTitle Example API
 #* @apiDescription This is an example API with authentication using PostgreSQL.
 
+#* @get /
+function(){
+  list(status = "ok", message = "API is running")
+}
+
 #* Ping endpoint
 #* @get /ping
 function() {
