@@ -34,15 +34,15 @@ COPY renv.lock renv.lock
 RUN Rscript -e "install.packages('renv')"
 RUN Rscript -e "renv::restore()"
 
-COPY api.R plumber.R
-COPY auth.R auth.R
-COPY db_connect.R db_connect.R
-COPY config.yml config.yml
+COPY /api/api.R plumber.R
+COPY /api/auth.R auth.R
+COPY /api/db_connect.R db_connect.R
+COPY /api/config.yml config.yml
 
 # Expose the port that your API will run on
-EXPOSE 7860
-#EXPOSE 8000
+#EXPOSE 7860
+EXPOSE 8000
 
 # Define the command to run your API
-ENTRYPOINT ["R", "-e", "pr <- plumber::plumb('plumber.R'); pr$run(host = '0.0.0.0', port = 7860)"]
 #ENTRYPOINT ["R", "-e", "pr <- plumber::plumb('plumber.R'); pr$run(host = '0.0.0.0', port = 7860)"]
+ENTRYPOINT ["R", "-e", "pr <- plumber::plumb('plumber.R'); pr$run(host = '0.0.0.0', port = 8000)"]

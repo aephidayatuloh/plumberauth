@@ -1,0 +1,13 @@
+default:
+  dbname: "postgres"
+  host: "localhost"
+  port: 5433
+  user: "postgres"
+  password: "P@ssw0rd"
+  
+production:
+  dbname: "tycmxsxh"
+  host: "rajje.db.elephantsql.com"
+  port: 5432
+  user: "tycmxsxh"
+  password: "Nndq-FWg9CcSC1h1XV7kybm1N_1qxbXV"
