@@ -49,5 +49,5 @@ po/*~
 rsconnect/
 
 # Database connection
-config.yml
+#config.yml
 .vercel
