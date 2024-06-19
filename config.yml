@@ -3,7 +3,7 @@ default:
   host: "localhost"
   port: 5433
   user: "postgres"
-  password: "P@ssw0rd"
+  password: "xxx"
   
 production:
   dbname: "tycmxsxh"
